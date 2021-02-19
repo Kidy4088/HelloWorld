@@ -22,11 +22,3 @@ jobs:
         java-version: 14
     - name: Build with Maven
       run: mvn -B package --file pom.xml
-    - name: Build & Push container image
-      uses: mr-smithers-excellent/docker-build-push@v2
-      with:
-        image: mengzyou/hellonode
-        tag: latest
-        registry: docker.io
-        username: kidy4088
-        password: zhangxi0220nmsl
